@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
 
 const data = [
@@ -59,6 +60,10 @@ const grid = [
 ];
 
 export const Container = () => {
+  // const [con.setCon]= useState<string>("");
+  // useEffect = (() => {
+  //   api.get("/").then((con)=> setCon(con.data.messsage))
+  // },[]);
   return (
     <div className="flex justify-center flex-col items-center mt-10">
       <div className="w-[1040px] h-full  flex relative overflow-hidden ">

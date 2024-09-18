@@ -2,11 +2,13 @@
 import { Navbar } from "@/Components/navbar";
 import { FaRegHeart } from "react-icons/fa";
 import { IoIosHeart } from "react-icons/io";
+import { Checkbox } from "@/Components/ui/checkbox";
 
 import Image from "next/image";
 import { Footer } from "@/Components/footer";
 import { useState } from "react";
 import Link from "next/link";
+import { title } from "process";
 
 const Buteegdehuun = () => {
   const [favorites, setFavorites] = useState<Set<string>>(new Set());
@@ -115,30 +117,49 @@ const Buteegdehuun = () => {
       img: "/nogoon.png",
     },
   ];
-
+  const angilal = [
+    { title: "Малгай" },
+    { title: "Усны сав" },
+    { title: "T-shirt" },
+    { title: "Hoodie" },
+    { title: "Tee" },
+    { title: "Цүнх" },
+  ];
+  const hemjee = [
+    { title: "Free" },
+    { title: "S" },
+    { title: "M" },
+    { title: "L" },
+    { title: "XL" },
+    { title: "2XL" },
+    { title: "3XL" },
+  ];
   return (
     <div>
       <div className="w-full h-auto flex justify-center mt-10">
         <div className="max-w-5xl w-full flex flex-wrap md:flex-nowrap justify-between">
           <div className="w-full md:w-[245px] flex flex-col gap-2">
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-1 ">
               <h1 className="text-xl font-bold">Ангилал</h1>
-              <p className="hover:bg-gray-300 rounded-xl"> Малгай </p>
-              <p className="hover:bg-gray-300 rounded-xl">Усны сав</p>
-              <p className="hover:bg-gray-300 rounded-xl">T-shirt</p>
-              <p className="hover:bg-gray-300 rounded-xl">Hoodie</p>
-              <p className="hover:bg-gray-300 rounded-xl">Tee</p>
-              <p className="hover:bg-gray-300 rounded-xl">Цүнх</p>
+              {angilal.map((item) => {
+                return (
+                  <div className="flex items-center gap-1">
+                    <Checkbox />
+                    <p className="hover:bg-gray-300 rounded-xl">{item.title}</p>
+                  </div>
+                );
+              })}
             </div>
             <div className="flex flex-col gap-2 mt-5">
               <h1 className="text-xl font-bold">Хэмжээ</h1>
-              <p className="hover:bg-gray-300 rounded-xl">Free</p>
-              <p className="hover:bg-gray-300 rounded-xl">S</p>
-              <p className="hover:bg-gray-300 rounded-xl">M</p>
-              <p className="hover:bg-gray-300 rounded-xl">L</p>
-              <p className="hover:bg-gray-300 rounded-xl">XL</p>
-              <p className="hover:bg-gray-300 rounded-xl">2XL</p>
-              <p className="hover:bg-gray-300 rounded-xl">3XL</p>
+              {hemjee.map((item) => {
+                return (
+                  <div className="flex gap-1 items-center">
+                    <Checkbox />
+                    <p className="hover:bg-gray-300 rounded-xl">{item.title}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
           <div className="w-full md:w-[774px] flex flex-wrap justify-between">
