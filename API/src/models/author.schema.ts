@@ -4,6 +4,7 @@ const users = new Schema({
   name: {
     type: String,
     required: true,
+    default: "haha",
   },
   createdAt: {
     type: Date,

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { IoChevronDown } from "react-icons/io5";
 
 const Tuuh = () => {
   const hurgelt = [

@@ -30,11 +30,13 @@ export const Navbar = () => {
           <Link href="shopping">
             <TiShoppingCart className="text-white w-[24px] h-[24px] hover:text-gray-400" />
           </Link>
-          <Link href="register">
+          {/* <Link href="register"> */}
+          <Link href="adminSignUp">
             <button className="w-[100px] h-[36px] bg-black text-white border border-blue-600">
               Бүртгүүлэх
             </button>
           </Link>
+          {/* </Link> */}
           <Link href="/nevtreh">
             <button className="w-[100px] h-[36px] bg-blue-500 hover:bg-blue-600 text-white">
               Нэвтрэх

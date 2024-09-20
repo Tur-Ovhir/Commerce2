@@ -20,7 +20,8 @@ const Register = () => {
       [e.target.name]: e.target.value,
     });
   };
-
+  // const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
   return (
     <div className="w-full h-[800px]  flex justify-center items-center">
       <div className="w-[400px] h-[600px] bg-white border border-gray-300 rounded-lg p-5 flex  flex-col justify-between">

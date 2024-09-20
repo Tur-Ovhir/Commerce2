@@ -1,10 +1,12 @@
 import mongoose from "mongoose";
+import { title } from "process";
 const { Schema, model } = mongoose;
 const user = new Schema({
   name: {
     type: String,
     required: true,
   },
+
   author: {
     type: Schema.Types.ObjectId,
     ref: "Author",

@@ -1,15 +1,8 @@
+import { createAuthorController } from "../controllers/create.auth.controller";
+import { getAuthorsController } from "../controllers/get.authors.controllers";
+
 const { Router } = require("express");
-const {
-  getAllAccounts,
-  createAccount,
-  deleteAccount,
-} = require("../controllers/account.controller");
 
-const accountRouter = Router();
+export const authorRouter = Router();
 
-accountRouter
-  .get("/", getAllAccounts)
-  .post("/", createAccount)
-  .delete("/:id", deleteAccount);
-
-module.exports = { accountRouter };
+authorRouter.post("/", createAuthorController).get("/", getAuthorsController);
