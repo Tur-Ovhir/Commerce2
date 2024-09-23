@@ -8,7 +8,7 @@ const NewPassword = () => {
   const [uppercaseValid, setUppercaseValid] = useState(false);
 
   // Handle input change
-  const handlePasswordChange = (e) => {
+  const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setNewPassword(value);
 

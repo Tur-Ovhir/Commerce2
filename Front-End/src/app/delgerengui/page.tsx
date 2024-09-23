@@ -22,6 +22,13 @@ const Delgerengui = () => {
       return newFavorites;
     });
   };
+  const size = [
+    { title: "S" },
+    { title: "M" },
+    { title: "L" },
+    { title: "XL" },
+    { title: "2XL" },
+  ];
   const image = [
     {
       img: "/orange.png",
@@ -98,21 +105,13 @@ const Delgerengui = () => {
                 <h1>Зэрлэг цэцгийн зурагтай даавуун материалтай цамц</h1>
                 <h1>Хэмжээний заавар</h1>
                 <div className="flex gap-2 text-sm ">
-                  <div className="w-[32px] h-[32px] border border-black rounded-full flex justify-center items-center hover:bg-black hover:text-white ">
-                    S
-                  </div>
-                  <div className="w-[32px] h-[32px] border border-black rounded-full flex justify-center items-center hover:bg-black hover:text-white">
-                    M
-                  </div>
-                  <div className="w-[32px] h-[32px] border border-black rounded-full flex justify-center items-center hover:bg-black hover:text-white">
-                    L
-                  </div>
-                  <div className="w-[32px] h-[32px] border border-black rounded-full flex justify-center items-center hover:bg-black hover:text-white">
-                    XL
-                  </div>
-                  <div className="w-[32px] h-[32px] border border-black rounded-full flex justify-center items-center hover:bg-black hover:text-white">
-                    2XL
-                  </div>
+                  {size.map((item, title) => {
+                    return (
+                      <div className="w-[32px] h-[32px] border border-black rounded-full flex justify-center items-center hover:bg-black hover:text-white ">
+                        {item.title}
+                      </div>
+                    );
+                  })}
                 </div>
                 <div className="flex gap-3 mt-3">
                   <div className="w-[32px] h-[32px] border border-black rounded-full flex justify-center items-center hover:bg-black hover:text-white">

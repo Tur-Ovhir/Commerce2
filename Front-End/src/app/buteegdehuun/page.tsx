@@ -125,7 +125,7 @@ const Buteegdehuun = () => {
     { title: "Tee" },
     { title: "Цүнх" },
   ];
-  const hemjee = [
+  const size = [
     { title: "Free" },
     { title: "S" },
     { title: "M" },
@@ -152,7 +152,7 @@ const Buteegdehuun = () => {
             </div>
             <div className="flex flex-col gap-2 mt-5">
               <h1 className="text-xl font-bold">Хэмжээ</h1>
-              {hemjee.map((item) => {
+              {size.map((item) => {
                 return (
                   <div className="flex gap-1 items-center">
                     <Checkbox />
