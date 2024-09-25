@@ -25,6 +25,7 @@ import { FaCalendarAlt } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
 import { MdOutlineHotelClass } from "react-icons/md";
 import { LuTrash } from "react-icons/lu";
+import Link from "next/link";
 const adminButeegdehuun = () => {
   const product = [
     {
@@ -139,9 +140,11 @@ const adminButeegdehuun = () => {
           <h1 className="font-bold text-[#3f4245] hover:text-black">Ангилал</h1>
         </div>
         <div className="mt-5">
-          <button className="w-[280px] h-[48px] bg-black text-white font-bold rounded-xl">
-            + Бүтээгдэхүүн нэмэх
-          </button>
+          <Link href="/productPlus">
+            <button className="w-[280px] h-[48px] bg-black text-white font-bold rounded-xl">
+              + Бүтээгдэхүүн нэмэх
+            </button>
+          </Link>
         </div>
         <div className="w-[1170px] h-[40px]  mt-5 flex flex-row justify-between">
           <div className="flex gap-3">
