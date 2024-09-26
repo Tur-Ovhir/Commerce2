@@ -112,7 +112,9 @@ const adminButeegdehuun = () => {
         <div className="w-[222px] h-[264px]  flex flex-col justify-between mt-5">
           <div className="flex h-[30px] gap-3 bg-white hover:bg-[#ededed]">
             <MdWindow className="w-[24px] h-[24px]" />
-            <h1 className="font-bold">Хяналтын самбар</h1>
+            <Link href="/hynaltiinSambar">
+              <h1 className="font-bold">Хяналтын самбар</h1>
+            </Link>
           </div>
           <div className="flex h-[30px] gap-3 bg-white hover:bg-[#ededed]">
             <TbNotes className="w-[24px] h-[24px]" />
@@ -132,7 +134,7 @@ const adminButeegdehuun = () => {
           </div>
         </div>
       </div>
-      <div className="w-[1218px] h-[900px] border border-black bg-[#f7f7f8]">
+      <div className="w-[1218px] h-[900px]  bg-[#f7f7f8]">
         <div className="w-[1218px] h-[56px] border flex gap-3">
           <h1 className="font-bold text-[#3f4245] hover:text-black ml-5">
             Бүтээгдэхүүн
