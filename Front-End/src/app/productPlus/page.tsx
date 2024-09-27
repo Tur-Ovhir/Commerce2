@@ -26,7 +26,9 @@ const productPlus = () => {
         <div className="w-[222px] h-[264px]  flex flex-col justify-between mt-5">
           <div className="flex h-[30px] gap-3 bg-white hover:bg-[#ededed]">
             <MdWindow className="w-[24px] h-[24px]" />
-            <h1 className="font-bold">Хяналтын самбар</h1>
+            <Link href="/hynaltiinSambar">
+              <h1 className="font-bold">Хяналтын самбар</h1>
+            </Link>
           </div>
           <div className="flex h-[30px] gap-3 bg-white hover:bg-[#ededed]">
             <TbNotes className="w-[24px] h-[24px]" />
@@ -115,7 +117,7 @@ const productPlus = () => {
           <div className="w-[575px] h-[773px] mt-16 flex flex-col justify-between  m-5">
             <div className="w-[575px] h-[232px] rounded-2xl bg-white ">
               <div className="m-5 flex flex-col gap-3">
-                <h1 className="font-bold">Ерөнхий аигилал</h1>
+                <h1 className="font-bold">Ерөнхий ангилал</h1>
                 <Select>
                   <SelectTrigger className="w-[505px] h-[56px] bg-[#f7f7f8]">
                     <SelectValue placeholder="Сонгох" />

@@ -4,7 +4,7 @@ import { GrMoney } from "react-icons/gr";
 import { MdProductionQuantityLimits } from "react-icons/md";
 import { IoMdSettings } from "react-icons/io";
 import { FaNotesMedical } from "react-icons/fa";
-
+import Link from "next/link";
 const hynaltiinSambar = () => {
   return (
     <div className="flex justify-center bg-[#f7f7f8] ">
@@ -25,7 +25,9 @@ const hynaltiinSambar = () => {
             </div>
             <div className="flex gap-3 h-[30px] bg-white hover:bg-[#ededed]">
               <MdProductionQuantityLimits className="w-[24px] h-[24px]" />
-              <h1 className="font-bold">Бүтээгдэхүүн</h1>
+              <Link href="/adminButeegdehuun">
+                <h1 className="font-bold">Бүтээгдэхүүн</h1>
+              </Link>
             </div>
             <div className="flex gap-3 h-[30px] bg-white hover:bg-[#ededed]">
               <IoMdSettings className="w-[24px] h-[24px]" />
@@ -33,9 +35,9 @@ const hynaltiinSambar = () => {
             </div>
           </div>
         </div>
-        <div className="">
+        <div className="flex flex-col">
           <div className="w-[1170px] h-[136px]  flex  justify-between m-5 gap-3">
-            <div className="w-[573px] h-[136px]  bg-white rounded-xl">
+            <div className="w-[573px] h-[136px] border border-white bg-white rounded-xl">
               <div className="flex flex-col m-3 gap-3">
                 <h1 className="font-bold text-xl"> $ Орлого</h1>
                 <h1 className="text-4xl font-bold">235,000₮</h1>
