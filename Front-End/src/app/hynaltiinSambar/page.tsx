@@ -145,7 +145,7 @@ const hynaltiinSambar = () => {
           <div className="flex flex-row m-5 mt-5 justify-between">
             <div className="w-[581px] h-[706px] rounded-2xl bg-white ">
               <div className="flex justify-between m-5">
-                <h1 className="text-xl font-bold">Шилдэг Бүтээгдэхүүн</h1>
+                <h1 className="text-xl font-bold">Шилдэг Бүтээгдэхүүнkk</h1>
                 <FaChevronRight />
               </div>
               <div className="w-[563px] h-[60px] font-bold p-3 flex justify-between bg-[#ecedf0] ">
