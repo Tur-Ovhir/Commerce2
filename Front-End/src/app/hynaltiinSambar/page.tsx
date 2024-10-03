@@ -178,7 +178,7 @@ const hynaltiinSambar = () => {
             </div>
             <div className="w-[565px] h-[349px] rounded-2xl bg-white flex flex-col p-5 gap-3 justify-center">
               <div className="w-[517px] h-[40px]  mt-3 flex justify-between">
-                <h1 className="font-bold text-xl">Борлуулалт</h1>
+                <h1 className="font-bold text-xl">Борлуулалтaa</h1>
                 <FaChevronRight />
               </div>
               <div className="w-[517px] h-[258px] ">
