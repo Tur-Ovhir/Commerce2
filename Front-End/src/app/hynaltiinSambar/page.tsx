@@ -102,7 +102,9 @@ const hynaltiinSambar = () => {
             </div>
             <div className="flex h-[30px] gap-3 bg-white hover:bg-[#ededed]">
               <TbNotes className="w-[24px] h-[24px]" />
-              <h1 className="font-bold">Захиалга</h1>
+              <Link href="zahialga">
+                <h1 className="font-bold">Захиалга</h1>
+              </Link>
             </div>
             <div className="flex h-[30px] gap-3 bg-white hover:bg-[#ededed]">
               <GrMoney className="w-[24px] h-[24px]" />
@@ -145,7 +147,7 @@ const hynaltiinSambar = () => {
           <div className="flex flex-row m-5 mt-5 justify-between">
             <div className="w-[581px] h-[706px] rounded-2xl bg-white ">
               <div className="flex justify-between m-5">
-                <h1 className="text-xl font-bold">Шилдэг Бүтээгдэхүүнkk</h1>
+                <h1 className="text-xl font-bold">Шилдэг Бүтээгдэхүүн</h1>
                 <FaChevronRight />
               </div>
               <div className="w-[563px] h-[60px] font-bold p-3 flex justify-between bg-[#ecedf0] ">
@@ -178,7 +180,7 @@ const hynaltiinSambar = () => {
             </div>
             <div className="w-[565px] h-[349px] rounded-2xl bg-white flex flex-col p-5 gap-3 justify-center">
               <div className="w-[517px] h-[40px]  mt-3 flex justify-between">
-                <h1 className="font-bold text-xl">Борлуулалтaa</h1>
+                <h1 className="font-bold text-xl">Борлуулалт</h1>
                 <FaChevronRight />
               </div>
               <div className="w-[517px] h-[258px] ">
