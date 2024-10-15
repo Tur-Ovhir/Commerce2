@@ -1,6 +1,7 @@
 "use client";
-import { useState } from "react";
+
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import React, { useState } from "react";
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -14,7 +15,7 @@ const Register = () => {
   const [passwordVisible, setPasswordVisible] = useState(false); // State for password visibility
   const [confirmPasswordVisible, setConfirmPasswordVisible] = useState(false); // State for confirm password visibility
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,

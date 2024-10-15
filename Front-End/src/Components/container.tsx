@@ -1,5 +1,4 @@
 "use client";
-import { ApiError } from "next/dist/server/api-utils";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
@@ -65,7 +64,7 @@ export const Container = () => {
   // useEffect = (() => {
   //   api.get("/").then((con)=> setCon(con.data.messsage))
   // },[]);
-  const [res, setRes] = useState<string>("");
+  // const [res, setRes] = useState<string>("");
   // useEffect(() => {
   //   api
   //     .get("/")
@@ -86,7 +85,7 @@ export const Container = () => {
         <div className="absolute mt-96 ml-5">
           <h1 className="text-2xl">Wildflower Hoodie</h1>
           <h1 className="text-xl font-bold">120’000₮</h1>
-          <h1>{res}</h1>
+
         </div>
       </div>
 
@@ -121,8 +120,8 @@ export const Container = () => {
                 index === 2
                   ? "h-[800px] w-full"
                   : index === 3
-                  ? "h-[800px] w-full  "
-                  : "h-[390px]";
+                    ? "h-[800px] w-full  "
+                    : "h-[390px]";
               return (
                 <div key={index} className={` ${customHeight}`}>
                   <div className="w-full h-full relative overflow-hidden ">

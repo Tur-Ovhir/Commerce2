@@ -10,7 +10,7 @@ import { AiOutlineFieldNumber } from "react-icons/ai";
 import Link from "next/link";
 import Image from "next/image";
 import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
-import { ChartConfig, ChartContainer } from "@/Components/ui/chart";
+import { ChartContainer } from "@/Components/ui/chart";
 
 const hynaltiinSambar = () => {
   const product = [
@@ -18,63 +18,63 @@ const hynaltiinSambar = () => {
       title: "WOMEN'S HORSEBIT MULE",
       img: "/gutal.png",
       number: "1",
-      price: "12.000₮",
+      price: "12000₮",
       sale: "200",
     },
     {
       title: "HOUNDSTOOTH CREWNECK TOP",
       img: "/t-shirt.png",
       number: "2",
-      price: "12.000₮",
+      price: "12000₮",
       sale: "90",
     },
     {
       title: "HOUNDSTOOTH CREWNECK TOP",
       img: "/ygaan.png",
       number: "3",
-      price: "12.000₮",
+      price: "12000₮",
       sale: "85",
     },
     {
       title: "HOUNDSTOOTH CREWNECK TOP",
       img: "/nogoon.png",
       number: "4",
-      price: "12.000₮",
+      price: "12000₮",
       sale: "73",
     },
     {
       title: "HOUNDSTOOTH CREWNECK TOP",
       img: "/borr.png",
       number: "5",
-      price: "12.000₮",
+      price: "12000₮",
       sale: "62",
     },
     {
       title: "HOUNDSTOOTH CREWNECK TOP",
       img: "/huh.png",
       number: "6",
-      price: "12.000₮",
+      price: "12000₮",
       sale: "58",
     },
     {
       title: "HOUNDSTOOTH CREWNECK TOP",
       img: "/sneakerblack.png",
       number: "7",
-      price: "12.000₮",
+      price: "12000₮",
       sale: "41",
     },
     {
       title: "HOUNDSTOOTH CREWNECK TOP",
       img: "/sneakerwhite.png",
       number: "8",
-      price: "12.000₮",
+      price: "12000₮",
       sale: "20",
     },
     {
       title: "HOUNDSTOOTH CREWNECK TOP",
       img: "/gutal.png",
       number: "9",
-      price: "12.000₮",
+      price: "12000₮",
       sale: "200",
     },
   ];

@@ -1,7 +1,7 @@
 "use client"; // Ensure the component is treated as a client component
 
-import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation"; // Correct import
+// import { useState, useEffect } from "react";
+// import { useRouter } from "next/navigation"; // Correct import
 import { Input } from "@/Components/ui/input";
 import Link from "next/link";
 const Sergeeh = () => {

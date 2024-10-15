@@ -1,6 +1,6 @@
-import { Navbar } from "@/Components/navbar";
+// import { Navbar } from "@/Components/navbar";
 import { Input } from "@/Components/ui/input";
-import { Footer } from "@/Components/footer";
+// import { Footer } from "@/Components/footer";
 import Link from "next/link";
 const Sagslah = () => {
   return (

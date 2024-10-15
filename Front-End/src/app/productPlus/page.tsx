@@ -32,13 +32,15 @@ const productPlus = () => {
           </div>
           <div className="flex h-[30px] gap-3 bg-white hover:bg-[#ededed]">
             <TbNotes className="w-[24px] h-[24px]" />
-            <h1 className="font-bold">Захиалга</h1>
+            <Link href="zahialga">
+              <h1 className="font-bold">Захиалга</h1>
+            </Link>
           </div>
           <div className="flex h-[30px] gap-3 bg-white hover:bg-[#ededed]">
             <GrMoney className="w-[24px] h-[24px]" />
             <h1 className="font-bold">Орлого</h1>
           </div>
-          <div className="flex gap-3 h-[30px] bg-white hover:bg-[#ededed]">
+          <div className="flex gap-3 h-[30px] bg-gray-400 rounded-xl">
             <MdProductionQuantityLimits className="w-[24px] h-[24px]" />
             <h1 className="font-bold">Бүтээгдэхүүн</h1>
           </div>

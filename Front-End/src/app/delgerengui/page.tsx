@@ -6,7 +6,7 @@ import { IoIosHeart } from "react-icons/io";
 import { FaStar } from "react-icons/fa6";
 import { FaStarHalfStroke } from "react-icons/fa6";
 import { FaRegHeart } from "react-icons/fa";
-import { Footer } from "@/Components/footer";
+
 import { useState } from "react";
 const Delgerengui = () => {
   const [favorites, setFavorites] = useState<Set<string>>(new Set());
@@ -33,31 +33,31 @@ const Delgerengui = () => {
     {
       img: "/orange.png",
       title: "All Smiles Nalgene",
-      price: "120'000₮",
+      price: "120000₮",
     },
     {
       img: "/saaral.png",
       title: "All Smiles Nalgene",
-      price: "120'000₮",
+      price: "120000₮",
     },
     {
       img: "/malgai.png",
       title: "All Smiles Nalgene",
-      price: "120'000₮",
+      price: "120000₮",
     },
     {
       img: "/huren.png",
       title: "All Smiles Nalgene",
-      price: "120'000₮",
+      price: "120000₮",
     },
     {
       title: "The Prompt Magazine",
-      price: "120'000₮",
+      price: "120000₮",
       img: "/prompt.png",
     },
     {
       title: "Chunky Glyph Tee",
-      price: "120'000₮",
+      price: "120000₮",
       img: "/jeans.png",
     },
     {
@@ -105,9 +105,12 @@ const Delgerengui = () => {
                 <h1>Зэрлэг цэцгийн зурагтай даавуун материалтай цамц</h1>
                 <h1>Хэмжээний заавар</h1>
                 <div className="flex gap-2 text-sm ">
-                  {size.map((item, title) => {
+                  {size.map((item) => {
                     return (
-                      <div className="w-[32px] h-[32px] border border-black rounded-full flex justify-center items-center hover:bg-black hover:text-white ">
+                      <div
+                        key={item.title} // Ensure to add a key prop
+                        className="w-[32px] h-[32px] border border-black rounded-full flex justify-center items-center hover:bg-black hover:text-white"
+                      >
                         {item.title}
                       </div>
                     );

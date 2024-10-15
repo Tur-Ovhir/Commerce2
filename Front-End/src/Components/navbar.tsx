@@ -1,17 +1,19 @@
 "use client";
-import Image from "next/image";
 import { Input } from "@/Components/ui/input";
 import { FaRegHeart } from "react-icons/fa";
 import { TiShoppingCart } from "react-icons/ti";
 import { CiSearch } from "react-icons/ci";
-
+import Image from "next/image";
 import Link from "next/link";
 export const Navbar = () => {
   return (
     <div className="w-full h-[68px] bg-black flex justify-center items-center">
       <div className="w-[1992px] h-[36px] bg-black flex justify-between">
         <div className="flex gap-3 items-center">
-          <img src="Pinecone.png" />
+
+          <Image src="/Pinecone.png" alt="logo" width={30} height={30} />
+
+
           <Link href="buteegdehuun">
             <h1 className="text-[#bfbfbf] text-xl">Бүтээгдэхүүн</h1>
           </Link>

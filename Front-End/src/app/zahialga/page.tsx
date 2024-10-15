@@ -90,7 +90,9 @@ const Zahialga = () => {
           <div className="w-[222px] h-[264px]  flex flex-col justify-between ">
             <div className="flex h-[30px] gap-3 bg-white hover:bg-[#ededed]">
               <MdWindow className="w-[24px] h-[24px]" />
-              <h1 className="font-bold">Хяналтын самбар</h1>
+              <Link href="hynaltiinSambar">
+                <h1 className="font-bold">Хяналтын самбар</h1>
+              </Link>
             </div>
             <div className="flex h-[30px] gap-3 bg-white hover:bg-[#ededed]">
               <TbNotes className="w-[24px] h-[24px]" />
@@ -156,7 +158,7 @@ const Zahialga = () => {
             <div>
               <h1 className="font-bold text-3xl">Захиалга</h1>
             </div>
-            <div className="w-[1170px] h-[36px] mt-5 flex justify-between bg-[#f7f7f8] border">
+            <div className="w-[1170px] h-[36px] mt-5 flex justify-between bg-[#f7f7f8] border font-bold" >
               <h1>Захиалгын ID Дугаар</h1>
               <h1>Үйлчлүүлэгч</h1>
               <h1>Огноо</h1>
